@@ -19,6 +19,6 @@ Class Ex2 {
 }
 $ex2 = new Ex2();
 
-echo $ex2->verificador(34);
+echo $ex2->verificador(-35);
 
 ?>

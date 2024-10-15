@@ -41,6 +41,11 @@ class Ex2TDDTest extends TestCase {
         $notaAlum = 10;
         $result = $ex2->verificador($notaAlum);
         $this->assertEquals("El alumno ha suspendido con una nota del = " . $notaAlum . " % ",$result);
+
+        $ex2 = new Ex2();
+        $notaAlum = -25;
+        $result = $ex2->verificador($notaAlum);
+        $this->assertEquals("El alumno ha suspendido con una nota del = " . $notaAlum . " % ",$result);
     }
 }
     
