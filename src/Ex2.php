@@ -3,9 +3,8 @@
 namespace Formacio\ExTema7;
 
 Class Ex2 {
-    public function verificador() {
-    //Nota del alumno;
-    $notaAlum = 61;
+    public function verificador($notaAlum) {
+
 
     if ($notaAlum >= 60) {
         return "El alumno es de primera Division con una nota del = " . $notaAlum . " % ";
@@ -14,5 +13,8 @@ Class Ex2 {
     }
 }
 }
+$ex2 = new Ex2();
+
+echo $ex2->verificador(10);
 
 ?>
